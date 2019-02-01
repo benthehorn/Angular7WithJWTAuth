@@ -1,0 +1,24 @@
+<p>
+  <button mat-button>Click me !!</button>
+
+</p>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Value</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let entry of entries">
+      <td>{{entry.Description}}</td>
+      <td>{{(entry.IsExpense) ? 'Expense' : 'Income'}}</td>
+      <td>{{entry.Value}}</td>
+      <td><button (click)="updateEntry(entry)" mat-raised-button color="primary"><b>Edit</b></button>
+        <button [routerLink]="['/delete-entry', entry.Id]" mat-raised-button color="warn"><b>Delete</b></button></td>
+    </tr>
+  </tbody>
+</table>
