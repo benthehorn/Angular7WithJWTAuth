@@ -1,4 +1,4 @@
-# ExpensesClient
+# ExpensesClient, created as part of a linkedIn tutorial for creating a web API using C# 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.3.
 
